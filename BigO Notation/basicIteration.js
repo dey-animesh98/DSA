@@ -6,3 +6,6 @@ for(let i in myArr){
 for(let i of myArr){
     console.log(i) // 1,2,3,4 (Returns elements)
 }
+
+
+console.log(20**0.5)
