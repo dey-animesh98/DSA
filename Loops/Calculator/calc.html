@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calulator</title>
-   
+
 </head>
+
 <body>
     <h2>Calculator</h2>
-    <script> type="text/javascript", src="./calc.js"</script>
+    <script> //type = "text/javascript", src = "./calc.js"
+        let ans = 0
+        while (true) {
+            const operator = prompt("Enter operator: ")
+            const op = operator.trim().charAt(0)
+            if (op == '+' || op == '-' || op == '*' || op == '/' || op == '%') {
+                let num1 = parseInt(prompt("Enter first number: "))
+                let num2 = parseInt(prompt("Enter Second number: "))
+
+                if (op == '+') {
+                    ans = num1 + num2
+                }
+                if (op == '-') {
+                    ans = num1 - num2
+                }
+                if (op == '*') {
+                    ans = num1 * num2
+                }
+                if (op == '/') {
+                    if (num2 != 0) {
+                        ans = num1 / num2
+                    } else {
+                        alert("Invalid input.Can't Divide By 0")
+                        ans = "Enter a valid input again"
+                    }
+                }
+                if (op == '%') {
+                    ans = num1 % num2
+                }
+            }
+            else if (op == 'x' || op == 'X') {
+                break;
+            }
+            else {
+                alert("Invalid Operation")
+            }
+            alert("Result: " + ans)
+
+        }
+    </script>
 </body>
+
 </html>
