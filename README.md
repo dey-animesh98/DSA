@@ -4,10 +4,28 @@ DSA 01-06-2022
 ### Dr. Radhika>>> https://www.youtube.com/watch?v=CCWFxRDTWHI&list=PLF0lDGpsux7vVLlNEsq1ZWHIWAjBi-erw&index=8
 ### KodinKevin>>> https://www.youtube.com/watch?v=LuXCJxY7nPE&list=PLn2ipk-jqgZiAHiA70hOxAj8RMUeqYNK3
 ### Kunal Khuswaha>>> https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
+### UDEMY >>> https://drive.google.com/drive/u/0/folders/1syTb7_EO8A1NPxpgrkZnAgT5R_uf9C2I
+
+ANAJANA VAKILA website-https://slidr.io/vakila/learning-functional-programming-with-javascript#30
+JS CONFERENCE- https://www.youtube.com/watch?v=NMMOv_md-14
+
+DSA QUESTIONS:
+Apna College- https://docs.google.com/spreadsheets/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/edit#gid=0
+Love Babbar- https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view
 
 
-### DSA REPO >>> https://github.com/Eishta/study-algo.git
+### DSA REPO ###
+1. https://github.com/Eishta/study-algo.git
+2. https://github.com/Asabeneh/30-Days-Of-JavaScript
+3. https://github.com/KimSeonHui?tab=repositories
+
 
 
 >>STRING METHOD >>>
 REMOVE NON-ALPHANUMERIC CHARS FROM STRING-> https://stackoverflow.com/questions/9364400/remove-not-alphanumeric-characters-from-string
+
+HELPFUL NPM PACKAGE
+Lodash -> GitHub -- https://github.com/lodash/lodash.git
+
+
+Arrow function-> https://www.youtube.com/watch?v=h33Srr5J9nY
