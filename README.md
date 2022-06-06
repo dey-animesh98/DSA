@@ -6,7 +6,7 @@ DSA 01-06-2022
 ### Kunal Khuswaha>>> https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
 
 
-# DSA REPO >>> https://github.com/Eishta/study-algo.git
+### DSA REPO >>> https://github.com/Eishta/study-algo.git
 
 
 >>STRING METHOD >>>
