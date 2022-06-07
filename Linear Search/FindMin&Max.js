@@ -70,3 +70,6 @@
     const res = findMin2D(arr)
     console.log(res)
 }
+//Find  number of digit in a integer
+let res = Math.floor(Math.log10(456412)+1)
+console.log(res)
