@@ -18,9 +18,9 @@
                 return mid
             }
         }
-        return -1
+        return array[start]
     }
-    console.log(findElement([2, 4, 6, 8, 9, 11, 15, 17, 19, 20, 22], 4))
+    console.log(findElement([2, 4, 6, 8, 9, 11, 15], 5))
 }
 
 

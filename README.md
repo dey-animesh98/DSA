@@ -1,6 +1,9 @@
 # DSA in JavaScript
 DSA 01-06-2022
 >>DSA Study Links
+######  DRIVE LINK FOR SOME GREAT TECH ARTICLES #####
+https://docs.google.com/document/d/1UH_0AxVxG2QB7XZnNLrDo0UKFYgTeDqVOAdhvNf4Hqw/edit
+
 ### Dr. Radhika>>> https://www.youtube.com/watch?v=CCWFxRDTWHI&list=PLF0lDGpsux7vVLlNEsq1ZWHIWAjBi-erw&index=8
 ### KodinKevin>>> https://www.youtube.com/watch?v=LuXCJxY7nPE&list=PLn2ipk-jqgZiAHiA70hOxAj8RMUeqYNK3
 ### Kunal Khuswaha>>> https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
