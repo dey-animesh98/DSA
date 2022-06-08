@@ -5,6 +5,7 @@
         let start = 0
         let end = array.length - 1
         let isAscending = array[start] < array[end]
+
         while (start <= end) {
             let mid = Math.floor(start + (end - start) / 2)
             if (array[mid] == target) {
@@ -17,6 +18,9 @@
                     end = mid - 1
                 }
             } else {
+                if (target < array[end]) {
+                    return -1
+                }
                 if (target < array[mid]) {
                     start = mid + 1
                 } else if (target > array[mid]) {
@@ -27,8 +31,10 @@
         if (isAscending) {
             return ("Index:" + end + " Ele:" + array[end])
         }
-        return ("Index:" + (end + 1) + " Ele:" + array[end + 1])
+        return ("Index:" + (end + 1) + " Ele2:" + array[end + 1])
     }
-    console.log(findFloor([-8, -6, -3, -1, 0, 1, 2, 4, 6, 8, 9, 11, 15, 17, 19, 20, 22], -6))
-    console.log(findFloor([22, 20, 18, 17, 14, 13, 12, 10, 9, 8, 6, 2, 1, 0, -3, -5, -7], 19))
+    console.log(findFloor([-3, -1, 0, 2, 5, 6, 8, 10], 5))
+    console.log(findFloor([10, 8, 6, 5, 2, 0, -1, -3], 5))
 }
+
+
