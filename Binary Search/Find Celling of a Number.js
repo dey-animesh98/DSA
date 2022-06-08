@@ -1,5 +1,7 @@
+// Find the Celling of a number(Smallest Greater / equal to the number ) Order-Agnoustic Binary Search
+
 {
-    function findElementABS(array, target) {
+    function findCeilling(array, target) {
         let start = 0
         let end = array.length - 1
         let isAscending = array[start] < array[end]
@@ -26,9 +28,11 @@
             
         }
         if(isAscending)
-        return array[start] //Only change in this Line , Everything is same as Order-Agnoustic BS
-        return array[start-1]
+        return ("Index:"+start + " Ele:"+array[start]) //Only change in this Line , Everything is same as Order-Agnoustic BS
+        return ("Index:"+ (start-1) + " Ele:"+ array[start-1])
     }
-    console.log(findElementABS([-8, -6, -3, -1, 0, 1, 2, 4, 6, 8, 9, 11, 15, 17, 19, 20, 22], 12))
-    console.log(findElementABS([22, 20, 18, 17, 14, 13, 12, 10, 9, 8, 6, 2, 1, 0, -3, -5, -7], 16))
+    console.log(findCeilling([-8, -6, -3, -1, 0, 1, 2, 4, 6, 8, 9, 11, 15, 17, 19, 20, 22], 3))
+    console.log(findCeilling([22, 20, 18, 17, 14, 13, 12, 10, 9, 8, 6, 2, 1, 0, -3, -5, -7], 16))
 }
+
+
