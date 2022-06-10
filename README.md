@@ -12,7 +12,7 @@ https://docs.google.com/document/d/1UH_0AxVxG2QB7XZnNLrDo0UKFYgTeDqVOAdhvNf4Hqw/
 ANAJANA VAKILA website-https://slidr.io/vakila/learning-functional-programming-with-javascript#30
 * JS CONFERENCE- https://www.youtube.com/watch?v=NMMOv_md-14
 
-### DSA Artiles 
+### DSA Articles 
 * https://www.baeldung.com/cs/time-vs-space-complexity
 * https://www.programiz.com/article/flowchart-programming
 * https://www.youtube.com/watch?v=WQoB2z67hvY
