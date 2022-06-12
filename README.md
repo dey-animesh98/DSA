@@ -37,3 +37,7 @@ Lodash -> GitHub -- https://github.com/lodash/lodash.git
 
 
 Arrow function-> https://www.youtube.com/watch?v=h33Srr5J9nY
+
+------------------------------------------------------------------------------------------------------------------------------------
+## Time Complexity of JS Operators
+1. https://dev.to/lukocastillo/time-complexity-big-0-for-javascript-array-methods-and-examples-mlg
