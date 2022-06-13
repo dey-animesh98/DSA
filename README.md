@@ -8,6 +8,7 @@ https://docs.google.com/document/d/1UH_0AxVxG2QB7XZnNLrDo0UKFYgTeDqVOAdhvNf4Hqw/
 ### KodinKevin>>> https://www.youtube.com/watch?v=LuXCJxY7nPE&list=PLn2ipk-jqgZiAHiA70hOxAj8RMUeqYNK3
 ### Kunal Khuswaha>>> https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
 ### UDEMY >>> https://drive.google.com/drive/u/0/folders/1syTb7_EO8A1NPxpgrkZnAgT5R_uf9C2I
+### Easyweb >>> https://www.youtube.com/channel/UCOBA70hHDse0omGfUp2aj0w
 
 ANAJANA VAKILA website-https://slidr.io/vakila/learning-functional-programming-with-javascript#30
 * JS CONFERENCE- https://www.youtube.com/watch?v=NMMOv_md-14
@@ -41,3 +42,4 @@ Arrow function-> https://www.youtube.com/watch?v=h33Srr5J9nY
 ------------------------------------------------------------------------------------------------------------------------------------
 ## Time Complexity of JS Operators
 1. https://dev.to/lukocastillo/time-complexity-big-0-for-javascript-array-methods-and-examples-mlg
+2. https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course

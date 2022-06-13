@@ -7,4 +7,8 @@ function checkCase(a){
         return 'UpperCase'
     }
 }
-console.log(checkCase('javasricpt'))
+// console.log(checkCase('javasricpt'))
+let h = +'1'
+let a = +h
+console.log(typeof a,a)
+console.log(typeof h,h)

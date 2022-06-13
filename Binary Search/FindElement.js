@@ -20,7 +20,7 @@
         }
         return -1
     }
-    console.log(findElement([2, 4, 6, 8, 9, 11, 15], 11))
+    // console.log(findElement([2, 4, 6, 8, 9, 11, 15], 11))
 }
 
 
@@ -53,6 +53,29 @@
         }
         return -1
     }
-    console.log(findElementABS([-8, -6, -3, -1, 0, 1, 2, 4, 6, 8, 9, 11, 15, 17, 19, 20, 22], -6))
-    console.log(findElementABS([22, 20, 18, 17, 14, 13, 12, 10, 9, 8, 6, 2, 1, 0, -3, -5, -7], 18))
+    // console.log(findElementABS([-8, -6, -3, -1, 0, 1, 2, 4, 6, 8, 9, 11, 15, 17, 19, 20, 22], -6))
+    // console.log(findElementABS([22, 20, 18, 17, 14, 13, 12, 10, 9, 8, 6, 2, 1, 0, -3, -5, -7], 18))
+}
+
+//--
+{
+    function findPosition(array, target) {
+        let start = 0
+        let end = array.length - 1
+        while (start <= end) {
+            let mid = Math.floor(start + (end - start) / 2)  
+            
+            if (target < array[mid]) {
+                end = mid - 1
+                
+            } else if (target > array[mid]) {
+                start = mid + 1
+             
+            } else {
+                return mid
+            }
+        }
+        return start
+    }
+    console.log(findPosition([2, 4, 6, 8, 9, 11, 15], 17))
 }

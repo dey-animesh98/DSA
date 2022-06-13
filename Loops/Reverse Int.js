@@ -21,3 +21,18 @@ function reverseInt2(num) {
     return rev
 }
 console.log(reverseInt2(123456))
+
+
+{
+    function prac(num){
+        let nums =''
+        while(num>0){
+            let rem = num%10
+            nums += rem
+            num = Math.floor(num/10)
+
+        }
+        return  +nums // '+' --> convert the string to number. 
+    }
+    console.log(prac(56412))
+}
