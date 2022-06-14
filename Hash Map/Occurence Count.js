@@ -20,7 +20,7 @@ Find the maximum occurence of the integer in an array.
         }
         return maxChar + " > " + maxOcc
     }
-    console.log(findMaxOcc([1, 2, 3, 4, 4]))
+    // console.log(findMaxOcc([1, 2, 3, 4, 4]))
 }
 
 //--HashMap O(n)
@@ -29,7 +29,8 @@ Find the maximum occurence of the integer in an array.
         let hash = {}
         let maxOcc = 0, maxChar = null
         for (let i = 0; i < arr.length; i++) {
-            hash[arr[i]] = hash[arr[i]] ? hash[arr[i]] += 1 : 1
+            hash[arr[i]] = hash.hasOwnProperty(arr[i]) ? hash[arr[i]] += 1 : 1
+            // hash[arr[i]] = hash[arr[i]] ? hash[arr[i]] += 1 : 1           
             if (maxOcc < hash[arr[i]]) {
                 maxOcc = hash[arr[i]]
                 maxChar = arr[i]
@@ -39,3 +40,7 @@ Find the maximum occurence of the integer in an array.
     }
     console.log(findMaxOcc([1, 2, 3, 4, 4]))
 }
+
+
+
+
