@@ -23,5 +23,7 @@
         }
         return array
     }
-    console.log(SelectionSort([12,-5,7,-12,0,32,46]))
+    // console.log(SelectionSort([12,-5,7,-12,0,32,46]))
 }
+
+console.log(Math.sqrt())
