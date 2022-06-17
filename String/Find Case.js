@@ -12,3 +12,9 @@ let h = +'1'
 let a = +h
 console.log(typeof a,a)
 console.log(typeof h,h)
+// 
+
+let st = 'abcde'
+console.log(st.charCodeAt(0))// Get ASCII VALUE
+let s = st.charCodeAt(0)+st.charCodeAt(1)
+console.log(s)
