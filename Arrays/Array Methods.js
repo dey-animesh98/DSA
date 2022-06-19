@@ -52,3 +52,5 @@
     // in this case, it skips the third element as it is empty
     prices.forEach(printElements);
 }
+
+

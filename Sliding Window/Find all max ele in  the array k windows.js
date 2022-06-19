@@ -62,5 +62,5 @@
     }
     return ans;
   }
-  console.log(findAllMax([-1, 1, 3, -2, 1, 5, 4, 7, 1, -1, 3, 8, 5], 3));
+  console.log(findAllMax([1, 3, 5, -1, -3, 5, 3, 6, 7], 3));
 }

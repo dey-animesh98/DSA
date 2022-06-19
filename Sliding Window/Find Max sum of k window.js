@@ -6,6 +6,14 @@
 // let array = [5,12,45,3,78,16,23,55,63,10,6,8] , k=3
 
 // Brute force --I Not Optimized & Scalable
+
+
+ /**
+  * Some commom terms used in this type of Questions.
+  * consecutive => ক্রমাগত (continuous, serial )
+  * Contiguous => সংলগ্ন, পার্শ্ববর্তী, (neighbour, nearby, adjacent)
+  * distinct => স্বতন্ত্র (indivisual)
+  */
 {
     function findMaxSum(array) {
         let maxSum = 0

@@ -19,6 +19,8 @@ let myObj = {
 let res = {...myObj}//rest operator/ Deep Copy
 let {name, age, vehicles} =myObj
 
-console.log(vehicles.airlines.lufthansa.model)
-console.log(res.vehicles.airlines.British_airways.capacity)
+// console.log(vehicles.airlines.lufthansa.model)
+// console.log(res.vehicles.airlines.British_airways.capacity)
+
+
 
