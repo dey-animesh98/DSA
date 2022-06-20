@@ -55,45 +55,71 @@ function findKthlargestSubString(str, k) {
 }
 // console.log(findKthlargestSubString("abcded",1))
 
-{
-    /**
- * Here we have to find the longest consecutive substring
- */
-    //     word  ke repeatation handle nhi hua h
-    //!   ########     not  perfactly working  some fixing needed    ################# 
-    let str = "hellothere"
-    // let str = "longesstSubtring"  // iske glt  ho rha h  jo  ss h uske vajah se
-    let stIdxOfSub = 0
-    let edInxOfSub = 0
 
-    let ws = 0, we = 0
+{//Dynamic Window Size
+    function findLongestSubStr(str) {
+        let winStart = 0, winEnd = 0
+        let strStart = 0, strEnd = 0
+        let windowMap = {}, subStr = ''
 
-    let windowMap = {}
+        while (winEnd < str.length) {
+            if (!windowMap[str[winEnd]]) { // If end & start string not matches will added to map
+                windowMap[str[winEnd]] = 1
 
-    while (we <= str.length - 1) {
-        if (!windowMap[str[we]]) {
-            windowMap[str[we]] = 1
-
-            if (we - ws > edInxOfSub - stIdxOfSub) {
-                edInxOfSub = we
-                stIdxOfSub = ws
+                if (winEnd - winStart > strEnd - strStart) { // update new sub string end & start
+                    strStart = winStart
+                    strEnd = winEnd
+                }
+                winEnd++
+            } else {
+                while (str[winEnd] != str[winStart]) { // if end == start then delete from map
+                    delete windowMap[str[winStart]]
+                    winStart++
+                }
+                winStart++
+                winEnd++
             }
-            we++
-        } else {
-            while (str[ws] != str[we]) {
-                delete windowMap[str[ws]]
-                ws++
-            }
-            ws++
-            we++
         }
+        for (let chars = strStart; chars <= strEnd; chars++) {
+            subStr += str[chars]
+        }
+        return [strStart, strEnd, subStr]
     }
+    console.log(findLongestSubStr('hellothere'))
+}
+/**
+ * Find the largest substring with distinct characters. 
 
-    let res = ""
-    for (let i = stIdxOfSub; i <= edInxOfSub; i++) {
-        res += str[i]
+   t h i s t h e i a r g e s t s u b 
+	Ø Approach- Sliding Window
+	Ø Take two pointer window start and end initialized with 0
+	Ø One another variable to store max size window of unique chars
+	Ø Take Hash map to store unique characters, initialize  as empty(Counting not necessary)
+	Ø Run a loop to check whether char at start pointer and end pointer are unique or not till str.length-1
+	Ø Store the unique chars in hash map with any value like 0 or 1
+	Ø if unique char at end pointer (starts from 0) store the char in map and end++ , every time update the window size
+	Ø If duplicate value comes then start++ until window becomes with all unique chars. 
+    After unique do end++ and compare the window size with previous one is greater or not , if greater then update window size.
+    Print the max window size
+ */
+{
+    function findLargest(str) {
+        let start = 0, end = 0, map = {}, maxWindow = 0, subWinStart, subWinEnd
+        while (end < str.length) {
+            if (!map[str[end]]) {
+                map[str[end]] = 1
+                end++
+                if (maxWindow < end - start) {
+                    maxWindow = end - start
+                    subWinStart = start
+                    subWinEnd = end-1
+                }
+            } else {
+                delete map[str[start]]
+                start++
+            }
+        }
+        return [maxWindow, subWinStart, subWinEnd]
     }
-
-    console.log(windowMap, stIdxOfSub, edInxOfSub, res)
-
+    console.log(findLargest('helloworld'))
 }

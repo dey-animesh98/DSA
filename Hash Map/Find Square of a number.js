@@ -15,6 +15,16 @@ Return:false
 //--
 {
     function findSquare(nums, squares) {
+        for(let i=0; i<nums.length; i++){
+            for (let j = 0; j < nums.length; j++) {
+                
+            }
+        }
+    }
+}
+//--
+{
+    function findSquare(nums, squares) {
         let numHash = {}, sqrHash = {}
         for (let i = 0; i < nums.length; i++) {
             numHash[nums[i]] = numHash[nums[i]] ? numHash[nums[i]] += 1 : 1
@@ -29,7 +39,9 @@ Return:false
                 return false
             }
         }
+        console.log(numHash, sqrHash)
         return true
     }
+
     console.log(findSquare([2, 4, 6, 8], [16, 4, 36, 64]))
 }
