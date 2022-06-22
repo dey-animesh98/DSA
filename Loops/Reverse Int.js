@@ -8,7 +8,7 @@ function reverseInt(num) {
     }
     return parseInt(rev)
 }
-console.log(reverseInt(123456))
+// console.log(reverseInt(123456))
 
 //Reverse the int M-2----
 function reverseInt2(num) {
@@ -20,7 +20,7 @@ function reverseInt2(num) {
     }
     return rev
 }
-console.log(reverseInt2(123456))
+// console.log(reverseInt2(-123456))
 
 
 {
@@ -34,5 +34,8 @@ console.log(reverseInt2(123456))
         }
         return  +nums // '+' --> convert the string to number. 
     }
-    console.log(prac(56412))
+    // console.log(prac(56412))
 }
+//TO CALCULATE THE DIGITS IN A NUMBER
+let num =5454848
+console.log(Math.ceil(Math.log10(num)))
