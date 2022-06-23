@@ -1,3 +1,6 @@
+
+//🎆🎆🎆🎆🎆🎆🎆🎆🎆🔴🔴🔴🔴✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️
+////////////Very very Important Question For interview////////////
 {//Bad Practice
     function revSentence(sen) {
         let res = []
