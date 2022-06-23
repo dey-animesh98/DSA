@@ -18,3 +18,9 @@ let st = 'abcde'
 console.log(st.charCodeAt(0))// Get ASCII VALUE
 let s = st.charCodeAt(0)+st.charCodeAt(1)
 console.log(s)
+
+function myFun(a) {
+
+    return `Hi ${a}`
+}
+// console.log(myFun("ani"))

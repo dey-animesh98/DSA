@@ -12,4 +12,3 @@
     // console.log(fibo(4)) //If input > 50 then we'll not the answer .this exponential time complexity
 }
 
-console.log(12^1)

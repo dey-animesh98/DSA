@@ -9,7 +9,7 @@
     }
     console.log(findUnique([3, 4, 5, 3, 4, 7, 2, 7, 2]))
 }
-
+console.log(12^1)
 {
    
 }
