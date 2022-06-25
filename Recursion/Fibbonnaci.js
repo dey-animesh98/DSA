@@ -19,7 +19,7 @@
 {//memoization with dp // Eliminate exppnential time complexity
 
     function fibo(n, dp = []) {
-        if (dp[n] != null) {
+        if (dp[n]) {
             return dp[n]
         }
         let res
@@ -31,7 +31,7 @@
         dp[n] = res
         return res
     }
-    console.log(fibo(1000))
+    console.log(fibo(100))
 }
 
 

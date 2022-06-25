@@ -39,7 +39,6 @@ function printN(n) {
 {
     function printDec(n) {
         if (n == 0) {
-            // console.log(n)
             return
         }
         console.log(n)
@@ -60,5 +59,16 @@ function printN(n) {
         printNum(n + 1) // aka Tail recursion - single function at last.
     }
     // printNum(1)
+}8
+
+{
+    function sumDigit(n, rev = 0) {
+        if (n > 0) {
+            return sumDigit(parseInt(n / 10), rev * 10 + n % 10)
+        }
+        return rev
+    }
+
+    console.log(sumDigit(2345))
 }
 
