@@ -1,5 +1,5 @@
 //Rotate array by k times
-// reverse a array without using extra array-3A
+// reverse a array without using extra array--1
 {
    
     function rev(arr) {
@@ -13,7 +13,6 @@
         }
         return arr
     }
-
     function rotateArr(arr, k) {
         if (k > arr.length) {
             k = k % arr.length
@@ -29,7 +28,7 @@
 
 
 
-
+/*
 {
      function swap(a, b) {
      // function swap(a, b) {
@@ -54,4 +53,4 @@
     }
     console.log(rev([2, 8, 1, 9]))
 
-}
+}*/

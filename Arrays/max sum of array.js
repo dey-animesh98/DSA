@@ -1,7 +1,8 @@
-//Find the max of any two ele(without sorting array)-5
+//Find the max of any two ele(without sorting array)-
 //largest and second largest num
+//Largest Sum -1
 {//it will not take two duplicate largest elements even though ele can appeared more the once.
-    function large(arr) {
+    function largestSum(arr) {
         let l = 0; sl = 0
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] > l) {
@@ -15,7 +16,7 @@
         console.log(l, sl)
         return (l + sl)
     }
-    console.log(large([5, 8, 2, 55, 55, 27, 27, 12, 15, 17, 2, 27, 8, 10, 55, 10]))
+    console.log(largestSum([5, 8, 2, 55, 55, 27, 27, 12, 15, 17, 2, 27, 8, 10, 55, 10]))
 }
 //--
 {
@@ -27,12 +28,12 @@
                     sl = l
                     l = arr[i]
                 }
-    
+
             }
             console.log(l, sl)
             return (l + sl)
         }
-        console.log(large([5, 8, 2, 55, 55, 27, 27, 12, 15, 17, 2, 27, 8, 10, 55, 10]))
+        // console.log(large([5, 8, 2, 55, 55, 27, 27, 12, 15, 17, 2, 27, 8, 10, 55, 10]))
     }
 }
 

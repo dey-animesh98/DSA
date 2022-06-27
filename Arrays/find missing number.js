@@ -1,3 +1,10 @@
+//Find the missing number in given array
+/**
+ * All consecutive & distinct elements
+ * Missing number is only one
+ * Sorting not required
+ */
+
 {
     function sum(arr) {
         arr.sort((a, b) => a - b)
@@ -11,5 +18,5 @@
         }
         return sum
     }
-    console.log(sum([11, 13, 12, 10, 15]))
+    console.log(sum([103,101,104,105]))
 }
