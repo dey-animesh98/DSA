@@ -27,7 +27,7 @@
     }
     return ans;
   }
-  // console.log(findAllMax([-1, 1, 3, -2, 1, 5, 4, 7,1,-1,3], 3))
+  // console.log(findAllMax([1,3,1,2,0,5], 3))
 }
 
 //Optimized Approach
@@ -62,5 +62,75 @@
     }
     return ans;
   }
-  console.log(findAllMax([1, 3, 5, -1, -3, 5, 3, 6, 7], 3));
+  // console.log(findAllMax([1,3,1,2,0,5], 3));
+}
+
+//-
+{
+  var maxSlidingWindow = function (nums, k) {
+    let que = [], max = -Infinity, ans = []
+    
+    for (let i = 0; i < k; i++) {
+      while (que.length > 0 && nums[i] >= nums[que[que.length - 1]]) {
+        que.pop()
+      }
+      que.push(i)
+      if (nums[i] > max) {
+        max = nums[i]
+      }
+    }
+    ans.push(max)
+
+    for (let j = k; j < nums.length; j++) {
+      
+      while (que.length > 0 && nums[que[que.length - 1]] <= nums[j]) {
+        que.pop()
+      }
+      if (que.length > 0 && que[0] <= j-k ) {
+        que.shift()
+      }
+      que.push(j)
+      ans.push(nums[que[0]])
+    }
+    return ans
+  };
+  console.log(maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3))
+}
+
+
+{
+  var maxSlidingWindow = function(nums, k) {
+    var result = [];
+    let window = [];
+    
+    for (let i = 0; i < k; i++) {
+        while (window.length > 0 && nums[i] >= nums[window[window.length - 1]]) {
+            window.pop();
+        } 
+        // Add current element at the back of the queue
+        window.push(i);
+    }
+    
+    // Appending the largest element in the window to the result
+    result.push(nums[window[0]])
+    
+    for (let i = k; i < nums.length; i++) {
+      
+        while (window.length > 0 && nums[i] >= nums[window[window.length - 1]]) {
+            window.pop();
+        }
+    
+        // Remove first index from the window deque if 
+        // it doesn't fall in the current window anymore
+        if (window.length > 0 && (window[0] <= i - k)) {
+            window.shift();
+        }
+        // Add current element at the back of the queue
+        window.push(i);
+        result.push(nums[window[0]]);
+    } 
+    return result;
+};
+console.log(maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3))
+
 }
