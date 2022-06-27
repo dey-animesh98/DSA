@@ -17,17 +17,22 @@
     a = a - b // b = 7 | a = 6
 }
 
+
+//Swap New 
+function swapNew(n1, n2) {
+    [n1, n2] = [n2, n1]
+    return [n1, n2]
+
+}
+// console.log(swapNew(5, 7))
+
 //=====String swap-2
 {
     let s1 = "some"
     let s2 = "thing"
-
     s1 = s1 + s2 // something
-
     s1 = s1.slice(-s2.length)
-
     //  console.log(s1)
-
 }
 
 // reverse a array without using extra array-3
@@ -88,23 +93,7 @@
 
 
 
-//Find the max of any two ele(without sorting array)-5
-//largest and second largest num
-{
-    function large(arr) {
-        let l = 0; sl = 0
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] >= l) {
-                sl = l
-                l = arr[i]
-            }
 
-        }
-        console.log(l, sl)
-        return (l + sl)
-    }
-    // console.log(large([5, 8,2,55,55,27,27, 12, 15, 17, 2,27,8,10,55,10]))
-}
 
 // Given an array repeated elements, return the most repeated the most repeated element from array - 6
 //
@@ -140,7 +129,7 @@
 
             // if (map.get(el)) {
             //     map.set(el, map.get(el) + 1)
-            // } else {
+            //Alternative       } else {
             //     map.set(el, 1)
             // }
         }
@@ -174,4 +163,116 @@
     //console.log(leastfreq1([7, 6, 5, 7, 7, 1, -1, -6, 7]))
     // console.log(leastfreq1("aabaabac"))
 }
+
+let str = "aabbcc"
+let b = str.slice(0, 5)
+// console.log(b)
+
+///---------------------------27-06-2022------------------------------//
+
+//Given an array , filter out duplicate elements and give unique elements in arr
+{
+    function uniqueArr(arr) {
+        let map = new Map()
+        let unique = []
+        let c = 0
+        for (let ele of arr) {
+            map.set(ele, map.get(ele) + 1 || 1)
+        }
+
+        for (let pairs of map) {
+            if (pairs[1] === 1) {
+                unique.push(pairs[0])
+                c++
+            }
+        }
+        console.log(map)
+        return c
+    }
+    console.log(uniqueArr([9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 12, 13, 14, 21, 45, 65, 23, 34, 54, 56]));
+}
+
+// Return the ele which are duplicates
+{
+    function dupArr(arr) {
+        let map = new Map()
+        let dup = []
+        for (let ele of arr) {
+            map.set(ele, map.get(ele) + 1 || 1)
+        }
+
+        for (let pairs of map) {
+            if (pairs[1] > 1) {
+                dup.push(pairs[0])
+            }
+        }
+        return dup
+    }
+    // console.log(dupArr([1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 3, 8]));
+}
+
+
+
+// Take an input and check whether the input is an interger or
+{
+    function checkInt(input) {
+        return input === parseInt(input)
+    }
+    // console.log(checkInt(56))
+}
+
+{
+    function checkInt2(input) {
+        if (input < 0) {
+            let xx = input * 2
+            input = (input - xx)
+        }
+        //input = Math.abs(input)
+        input += ""
+        let arr = input.split('')
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 0 && arr[i] <= 9) {
+                continue
+            } else {
+                return false
+            }
+        }
+        return true
+    }
+    // console.log(checkInt2(124))
+}
+
+// Integer Regex = /^-?[0-9]+$/
+
+//Using regex
+{
+    function checkInt3(input) {
+        let intReg = /^-?[0-9]+$/
+        let res = intReg.test(input)
+        return res
+    }
+    //  console.log(checkInt3(23))
+
+
+}
+//take a number and if number is multiple of 3 print "Foo"
+//take a number and if number is multiple of 5 print "Bar"
+//take a number and if number is multiple of 3  & 5 print "FooBar"
+// else print nothing
+
+{
+    function printer(number) {
+        if (number % 3 === 0 && number % 5 === 0) {
+            console.log(("FooBar"));
+        } else if (number % 3 === 0) {
+            console.log(("Foo"));
+        } else if (number % 5 === 0) {
+            console.log(("Bar"));
+        }
+    }
+    // printer(25)
+}
+
+
 
