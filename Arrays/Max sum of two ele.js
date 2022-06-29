@@ -3,7 +3,7 @@
 //Largest Sum -1
 {//it will not take two duplicate largest elements even though ele can appeared more the once.
     function largestSum(arr) {
-        let l = 0; sl = 0
+        let l = arr[0]; sl = -Infinity
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] > l) {
                 sl = l
@@ -16,13 +16,13 @@
         console.log(l, sl)
         return (l + sl)
     }
-    console.log(largestSum([5, 8, 2, 55, 55, 27, 27, 12, 15, 17, 2, 27, 8, 10, 55, 10]))
+    // console.log(largestSum([15, -2, -9, -4, -3, -12, -15, -10]))
 }
 //--
 {
     {//it will not take two duplicate largest elements if appeared more the once.
         function large(arr) {
-            let l = 0; sl = 0
+            let l = arr[0]; sl = -Infinity
             for (let i = 0; i < arr.length; i++) {
                 if (arr[i] >= l) {
                     sl = l
@@ -54,3 +54,5 @@
     }
     // console.log(largestSumOfArray([2,8,7,12,45,89,100,200,200]))
 }
+
+

@@ -1,8 +1,18 @@
 //=====String swap-2
+// {
+
+
+// }
+
+let a = "hi";
+let b = "there";
+[a, b] = [b, a]
+
+// console.log(a, b)
+
 {
-    let s1 = "some"
-    let s2 = "thing"
-    s1 = s1 + s2 // something
-    s1 = s1.slice(-s2.length)
-    //  console.log(s1)
+    let a = "world", b = "hello";
+    b = [a, a = b][0];
+
+    console.log(a, b); // Hello world
 }

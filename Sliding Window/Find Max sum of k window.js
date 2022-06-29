@@ -8,12 +8,12 @@
 // Brute force --I Not Optimized & Scalable
 
 
- /**
-  * Some commom terms used in this type of Questions.
-  * consecutive => ক্রমাগত (continuous, serial )
-  * Contiguous => সংলগ্ন, পার্শ্ববর্তী, (neighbour, nearby, adjacent)
-  * distinct => স্বতন্ত্র (indivisual)
-  */
+/**
+ * Some commom terms used in this type of Questions.
+ * consecutive => ক্রমাগত (continuous, serial )
+ * Contiguous => সংলগ্ন, পার্শ্ববর্তী, (neighbour, nearby, adjacent)
+ * distinct => স্বতন্ত্র (indivisual)
+ */
 {
     function findMaxSum(array) {
         let maxSum = 0
@@ -60,7 +60,7 @@
             sumFirstK += array[i]
         }
         maxSum = sumFirstK
-        for (let j = 0; j < array.length - k; j++) {
+        for (let j = 0; j < array.length-k ; j++) {
             sumFirstK += array[j + k] - array[j]
             if (sumFirstK > maxSum) {
                 maxSum = sumFirstK
@@ -68,24 +68,24 @@
         }
         return maxSum
     }
-    console.log(findMaxSum([300, 12, 45, 3, 78, 16, 23, 55, 63, 10, 6, 8, 200], 3))
+    // console.log(findMaxSum([300, 12, 45, 3, 78, 16, 23, 55, 63, 10, 6, 8, 200], 3))
 
 }
 
 {// Same Result different approach
     function findMaxSum(array, k) {
         let maxSum = 0
-        let sumFirstK = 0
+        let sumOfWin = 0
         for (let i = 0; i < k; i++) {
-            sumFirstK += array[i]
+            sumOfWin += array[i]
         }
-        maxSum = sumFirstK
+        maxSum = sumOfWin
         for (let j = k; j < array.length; j++) {
-            sumFirstK += array[j] - array[j - k]
+            sumOfWin += array[j] - array[j - k]
+            maxSum = sumOfWin > maxSum ? sumOfWin : maxSum
         }
-        maxSum = sumFirstK > maxSum ? sumFirstK : maxSum 
         return maxSum
     }
-    console.log(findMaxSum([300, 12, 45, 3, 78, 16, 23, 55, 63, 10, 6, 8, 200], 3))
+    console.log(findMaxSum([ 12, 45, 3, 78, 16, 23,100, 55, 60, 10, 6, 8, 10], 3))
 
 }

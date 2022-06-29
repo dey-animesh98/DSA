@@ -5,14 +5,16 @@
 
 {
     function bubbleSort(array) {
-        let sorted = true
-        for (let i = 0; i < array.length; i++) {
+        
+        for (let i = 0; i < array.length-1; i++) {
+            let sorted = true
             for (let j = 1; j < array.length - i; j++) {
                 if (array[j] < array[j - 1]) {
                     let temp = array[j - 1]
                     array[j - 1] = array[j]
                     array[j] = temp
                     sorted = false
+                 
                 }
             }
             if (sorted)
@@ -20,5 +22,5 @@
         }
         return array
     }
-    console.log(bubbleSort([5,45,3,-12,2,4,21,20]))
+    console.log(bubbleSort([4,3,1]))
 }

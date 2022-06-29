@@ -4,7 +4,6 @@
 
 //Off-place merge sort; Return new array
 {
-
     const merge = function (arr1, arr2) {
         let result = []
         let i = 0
@@ -38,4 +37,6 @@
 
         return merge(left, right)
     };
+
+    console.log(sortArray([5,1,3,6,1,8,2,4,3,45,0,18,-6,1,3]))
 }
