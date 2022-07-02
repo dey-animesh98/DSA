@@ -9,8 +9,7 @@ https://docs.google.com/document/d/1UH_0AxVxG2QB7XZnNLrDo0UKFYgTeDqVOAdhvNf4Hqw/
 ### Kunal Khuswaha>>> https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
 ### UDEMY >>> https://drive.google.com/drive/u/0/folders/1syTb7_EO8A1NPxpgrkZnAgT5R_uf9C2I
 ### Easyweb >>> https://www.youtube.com/channel/UCOBA70hHDse0omGfUp2aj0w
-click [this](#successful-response-structure)
-click [this](#this-is-here)
+
 * Website Every Concept with animation
 1. https://visualgo.net/en
 2. https://www.toptal.com/developers/sorting-algorithms
@@ -62,24 +61,3 @@ https://docs.google.com/spreadsheets/u/1/d/1jWSO1xrAHyTIlp8bHVBdSPM2tToiQhkNwXnL
 * interview Questions
 1. https://github.com/learning-zone/nodejs-interview-questions
 
-```yaml
-{
-  userId: {ObjectId, refs to User, mandatory, unique},
-  items: [{
-    productId: {ObjectId, refs to Product model, mandatory},
-    quantity: {number, mandatory, min 1}
-  }],
-  totalPrice: {number, mandatory, comment: "Holds total price of all the items in the cart"},
-  totalItems: {number, mandatory, comment: "Holds total number of items in the cart"},
-  createdAt: {timestamp},
-  updatedAt: {timestamp},
-}
-```
-
-
-
-### Successful Response structure
-thisisres
-
-### This is here
-hi
