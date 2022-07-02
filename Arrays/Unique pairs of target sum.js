@@ -120,15 +120,36 @@
             let a = sum - arr[i]
             if (map.has(a)) {
                 // console.log(a, arr[i])
-                return [map.get(a),i]
+                return [map.get(a), i]
             }
-            map.set(arr[i],i)
+            map.set(arr[i], i)
         }
         return false
     }
     // console.log(sumExists3([5, 3, 2, 8, 4, 1, 7, 9], 5))
 }
 
+//It will give the count of unque pairs
+{
+    function sumDistintPair(arr, sum) {
+        const elemSet = new Set();
+        const seenSet = new Set();
+
+        let count = 0;
+        for (let currValue of arr) {
+            const nextValue = sum - currValue;
+            if (elemSet.has(nextValue) && !seenSet.has(currValue)) {
+                count++;
+                seenSet.add(nextValue);
+                seenSet.add(currValue);
+            }
+            elemSet.add(currValue);
+        }
+        return count;
+    }
+
+}
+// console.log(sumDistintPair([1, 5, 1, 5], 6));
 
 /** 
         //method - 2...>> Work in progress

@@ -33,8 +33,8 @@
         }
         return ("Index:" + (end + 1) + " Ele2:" + array[end + 1])
     }
-    console.log(findFloor([-3, -1, 0, 2, 5, 6, 8, 10], 5))
-    console.log(findFloor([10, 8, 6, 5, 2, 0, -1, -3], 5))
+    console.log(findFloor([-3, -1, 0, 2, 5, 6, 8, 10], 4))
+    // console.log(findFloor([10, 8, 6, 5, 2, 0, -1, -3], 5))
 }
 
 

@@ -36,6 +36,8 @@ Love Babbar- https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/v
 6. https://github.com/Deepa-chaurasiya01
 7. https://github.com/kuhuk
 8. https://github.com/Musharrafbegim
+9. https://github.com/shriyaMadan
+10. https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes
 
 
 
@@ -56,3 +58,19 @@ Arrow function-> https://www.youtube.com/watch?v=h33Srr5J9nY
 ----
 * Question Asked in interview
 https://docs.google.com/spreadsheets/u/1/d/1jWSO1xrAHyTIlp8bHVBdSPM2tToiQhkNwXnLDBWPHVE/htmlview#gid=0
+* interview Questions
+1. https://github.com/learning-zone/nodejs-interview-questions
+
+```yaml
+{
+  userId: {ObjectId, refs to User, mandatory, unique},
+  items: [{
+    productId: {ObjectId, refs to Product model, mandatory},
+    quantity: {number, mandatory, min 1}
+  }],
+  totalPrice: {number, mandatory, comment: "Holds total price of all the items in the cart"},
+  totalItems: {number, mandatory, comment: "Holds total number of items in the cart"},
+  createdAt: {timestamp},
+  updatedAt: {timestamp},
+}
+```

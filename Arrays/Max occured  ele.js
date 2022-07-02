@@ -39,5 +39,5 @@
         }
         return [maxFreq, maxEle]
     }
-    console.log(freq1([7, 8, 6, 5, 7, 7, 1, -1, -6, 7]))
+    // console.log(freq1([7, 8, 6, 5, 7, 7, 1, -1, -6, 7]))
 }

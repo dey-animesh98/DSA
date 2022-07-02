@@ -30,6 +30,11 @@
     In many ways, delegation is a more flexible way of combining objects than inheritance 
     (for one thing, it's possible to change or completely replace the delegate at run time).
 
+
+
+    🔖🔖🔖🔖⚠️⚠️⚠️⚠️🔖🔖🔖🔖🔖🔖INHERITANCE
+    Inheritance is like one object trying to access properties and methods of another object.
+
  */
 
 

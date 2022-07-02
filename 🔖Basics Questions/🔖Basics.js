@@ -1,3 +1,32 @@
+setTimeout(() => {
+  
+}, timeout);
+
+/**
+ * 
+ * 1) get subsequence of a string,
+2) KPC PROBLEM
+1. You are given a string str. The string str will contains numbers only, where each number stands for a key pressed on a mobile phone.
+2. The following list is the key to characters map :
+    0 -> .;
+    1 -> abc
+    2 -> def
+    3 -> ghi
+    4 -> jkl
+    5 -> mno
+    6 -> pqrs
+    7 -> tu
+    8 -> vwx
+    9 -> yz
+3. Complete the body of getKPC function - without changing signature - to get the list of all words that could be produced by the keys in str.
+Use sample input and output to take idea about output.
+3) GET MAZE PATHS
+1. You are given a number n and a number m representing number of rows and columns in a maze.
+2. You are standing in the top-left corner and have to reach the bottom-right corner. Only two moves are allowed 'h' (1-step horizontal) and 'v' (1-step vertical).
+3. Complete the body of getMazePath function - without changing signature - to get the list of all paths that can be used to move from top-left to bottom-right.
+4)get maze paths with jumps
+ */
+
 function twoSum(nums, target) {
   let res = []
   let map = new Map()
@@ -70,3 +99,83 @@ function isPrime(num) {
 }
 
 
+///
+//Check if both halves of the string have same set of characters
+{
+  function half(a) {
+
+    let mid = Math.floor(a.length / 2)
+    if (a.length % 2 === 1) {
+      a.splice(mid, 1)
+    }
+
+    let map = new Map()
+    for (let i = 0; i < mid; i++) {
+      map.set(a[i], map.get(a[i]) + 1 || 1)
+    }
+
+    for (let j = mid; j < a.length; j++) {
+      if (map.get(a[j])) {
+        map.set(a[j], map.get(a[j]) - 1)
+      }
+
+      if (map.get(a[j]) === 0) {
+        map.delete(a[j])
+      }
+    }
+
+    if (map.size === 0) return "Yes"
+    return "No"
+
+  }
+
+  // console.log(half(["a", "b", "c", "b", "a", "c"]))
+}
+
+//Sort the 1st half of an array in ascending and 2nd half in descending order respectively
+
+{
+  function solution(a, arr) {
+    //Write your solution here
+    let mid = Math.floor(a / 2)
+    for (let i = 0; i < a; i++) {
+      for (let j = 1; j < a - i; j++) {
+        if (arr[j] < arr[j - 1]) {
+          let temp = arr[j - 1]
+          arr[j - 1] = arr[j]
+          arr[j] = temp
+        }
+      }
+    }
+
+    let start = mid, end = a - 1
+    while (start < end) {
+      [arr[start], arr[end]] = [arr[end], arr[start]]
+      start++
+      end--
+    }
+    return arr.join(' ')
+  }
+}
+
+
+//
+// Find the hidden number
+{//Bekar dhop
+  function solution1(a, arr) {
+    //Write your solution here
+    let sum = 0
+    for (let ele of arr) {
+      sum += ele
+    }
+    let hidden = Math.round(sum / a)
+    if (arr.includes(hidden)) {
+      return hidden
+    } else {
+      return -1
+    }
+  }
+  // console.log(solution1(4,[7,4,5,3]))
+}
+
+console.log(15 - 7 * (5))
