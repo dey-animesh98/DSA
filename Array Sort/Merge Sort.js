@@ -38,5 +38,5 @@
         return merge(left, right)
     };
 
-    console.log(sortArray([5,1,3,6,1,8,2,4,3,45,0,18,-6,1,3]))
+    console.log(sortArray([5, 1, 3, 6, 1, 8, 2, 4, 3, 45, 0, 18, -6, 1, 3]))
 }

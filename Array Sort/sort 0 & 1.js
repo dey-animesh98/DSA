@@ -32,17 +32,20 @@ function sort2(arr) { //Optimize
 
         while (arr[left] === 0 && left < right) {
             left++
+            console.log("1")
         }
 
         while (arr[right] === 1 && left < right) {
             right--
+            console.log("2")
+
         }
 
         if (left < right) {
-        [arr[left], arr[right]] = [arr[right], arr[left]]
+            [arr[left], arr[right]] = [arr[right], arr[left]]
         }
-
+        console.log(arr)
     }
     return arr
 }
-console.log(sort2([0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]))
+console.log(sort2([1, 1, 1, 1, 0, 0, 0, 0]))

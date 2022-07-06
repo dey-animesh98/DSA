@@ -1,3 +1,29 @@
+//Closure concepts
+
+/**
+ * 
+ * What is closures ?
+ * Function along with lexical scope bundled together forms a closure.
+ * Closure :Function bundled with its lexical environment is known as a closure. Whenever function is returned, 
+ * even if its vanished in execution context but still it remembers the reference it was pointing to. 
+ * Its not just that function alone it returns but the entire closure and that's where it becomes interesting !!
+ * 
+ */
+function a1(){
+    let x = 2
+    function a2() {
+        console.log(x)
+    }
+    x = 5
+    return a2
+}
+let b1 = a1()
+// console.log(b1) //f(a2)
+
+b1() //2 closure concept
+
+
+
 let myObj = {
     name: "Ram",
     age: 27,

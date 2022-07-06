@@ -41,12 +41,24 @@ function subArray(arr, n) {
     console.log(square(30000))
     console.log(square(30000))
     console.log(square(30000)) */
-let arr = [1,2,3,4,5,6,7,8,9]
-for(let i = 0; i< arr.length; i++){
-    for(let j = i; j< i+2;j++){
-        console.log(i,j)
+
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for (let i = 0; i < arr.length; i++) {
+    for (let j = i; j < i + 2; j++) {
+        // console.log(i,j)
     }
-  
+
 }
 
 
+// let a = 0
+// while (a++ < 5 - ++a) {
+//     console.log("ok")
+
+// }
+
+
+/**
+ * 
+ */

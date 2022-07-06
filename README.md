@@ -10,6 +10,12 @@ https://docs.google.com/document/d/1UH_0AxVxG2QB7XZnNLrDo0UKFYgTeDqVOAdhvNf4Hqw/
 ### UDEMY >>> https://drive.google.com/drive/u/0/folders/1syTb7_EO8A1NPxpgrkZnAgT5R_uf9C2I
 ### Easyweb >>> https://www.youtube.com/channel/UCOBA70hHDse0omGfUp2aj0w
 
+
+
+* https://www.geeksforgeeks.org/must-do-coding-questions-for-product-based-companies/
+* https://www.geeksforgeeks.org/recently-asked-interview-questions-in-product-based-companies/
+* https://www.codingninjas.com/blog/2021/05/29/must-do-coding-interview-questions-for-product-based-companies/
+
 * Website Every Concept with animation
 1. https://visualgo.net/en
 2. https://www.toptal.com/developers/sorting-algorithms
@@ -57,7 +63,19 @@ Arrow function-> https://www.youtube.com/watch?v=h33Srr5J9nY
 
 ----
 * Question Asked in interview
-https://docs.google.com/spreadsheets/u/1/d/1jWSO1xrAHyTIlp8bHVBdSPM2tToiQhkNwXnLDBWPHVE/htmlview#gid=0
-* interview Questions
 1. https://github.com/learning-zone/nodejs-interview-questions
+2. https://docs.google.com/spreadsheets/u/1/d/1jWSO1xrAHyTIlp8bHVBdSPM2tToiQhkNwXnLDBWPHVE/htmlview#gid=0
 
+
+* Company List
+1. https://docs.google.com/spreadsheets/d/1E5SA3UdaSDhGUkJkU-D8tKR9kEky9mQNA22v80dNFfw/edit#gid=0
+
+
+---
+* Food Ordering app project
+https://github.com/ankitsaxena21/Food-Ordering-App
+https://ankitsaxena21.github.io/Food-Ordering-App/
+
+-Basic
+https://github.com/pjcodesjs/food_ordering_app
+https://www.youtube.com/watch?v=QKo11ccZNrM
