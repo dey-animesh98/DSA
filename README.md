@@ -72,10 +72,14 @@ Arrow function-> https://www.youtube.com/watch?v=h33Srr5J9nY
 
 
 ---
+
 * Food Ordering app project
+```yaml
 https://github.com/ankitsaxena21/Food-Ordering-App
 https://ankitsaxena21.github.io/Food-Ordering-App/
-
+```
 -Basic
-https://github.com/pjcodesjs/food_ordering_app
-https://www.youtube.com/watch?v=QKo11ccZNrM
+```yml
+- https://github.com/pjcodesjs/food_ordering_app
+- https://www.youtube.com/watch?v=QKo11ccZNrM
+```
