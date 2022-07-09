@@ -3,6 +3,8 @@
 // Time Complexity => Wrost case (if array sorted in opposite order) O(n^2) 
 // Bubble Sort is Stable sorting Because the original order is maintained for duplicated values
 
+//Reference:
+// http://www.algolist.net/Algorithms/Sorting/Bubble_sort
 {
     function bubbleSort(array) {
 
@@ -22,7 +24,7 @@
         }
         return array
     }
-    console.log(bubbleSort([4, 3, 1]))
+    // console.log(bubbleSort([4, 3, 1]))
 }
 
 //-- Method 2
@@ -42,5 +44,43 @@
         }
         return nums;
     };
-    console.log(bubbleSort2([2, 45, 54, -89, 23, 2, 74, 112, -56, 1, 0]))
+    // console.log(bubbleSort2([2, 45, 54, -89, 23, 2, 74, 112, -56, 1, 0]))
+}
+
+
+// let array = [1, 2, 3, 4, 5]
+
+// for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+
+//         console.log(array[j])
+//     }
+
+// }
+
+
+//Custom Input // a = 1 Descending Order, a = 0 Ascending Order, N = arr.length 
+{
+    function solution(a, n, arr) {
+        //Write your solution here
+
+        for (let i = 0; i < n - 1; i++) {
+            let sorted = true
+            for (let j = 1; j < n - i; j++) {
+                if (a === 0) {
+                    if (arr[j] < arr[j - 1]) {
+                        [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]]
+                        sorted = false
+                    }
+                } else if (a === 1) {
+                    if (arr[j] > arr[j - 1]) {
+                        [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]]
+                        sorted = false
+                    }
+                }
+            }
+            if (sorted) break;
+        }
+        return arr.join(' ')
+    }
 }

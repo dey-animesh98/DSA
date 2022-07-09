@@ -3,6 +3,8 @@
 //After sorting merge those by two pointer
 
 //Off-place merge sort; Return new array
+
+//Best for large input
 {
     const merge = function (arr1, arr2) {
         let result = []

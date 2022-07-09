@@ -1,6 +1,75 @@
+/*
+// Best for Hybrid sort
+//T.C - 
+// Best Case - (n log n)
+// Average Case - (n log n)
+// Wrost Case - O (n^2)
+
+// It takes less memory than merge sort
+
+*** Wrost occurs when pivot element is the smallest ele or largest ele -> in case of Array already sorted in Asc or desc order.
+[1,2,3,4,5]    -> n  = 5
+[1,2,3,4]      -> n-1 = 4
+[1,2,3]        -> n-2 = 3
+[1,2]          -> n-3 = 2
+[1]            -> n-4 = 1
+                Total = 5+4+3+2+1 = 10
+
+                n * (n+1) / 2 = 5 *(5+1) /2   
 
 
-function quickSort(arr, left, right) {
+
+*/
+
+
+
+
+{
+    function partition(arr, low, high) {
+        //last index is pivot
+        let pivot = arr[high]  
+        // i is a place maker for smaller element than pivot . here we assuming there
+        // are no smaller element than pivot so take low -1 i.e = -1
+        let i = low - 1
+
+        //traversing tbe array and comparing the elements with pivot
+        for (let j = low; j < high; j++) {
+            if (arr[j] < pivot) {
+                //if element is less than pivot i will increase and make place for the element
+                i++
+                // swapping the element 
+                [arr[i], arr[j]] = [arr[j], arr[i]]
+            }
+        }
+        // Placing the pivot in correct position
+        i++
+        arr[high] = arr[i]
+        arr[i] = pivot
+        return i
+    }
+
+
+    function quickSort(arr, low, high) {
+        if (low < high) {
+            // will i means the correct index of pivot ele
+            let pivotIdx = partition(arr, low, high)
+
+            //Re partitioning for sort both sides pivot elements
+            quickSort(arr, low, pivotIdx - 1) // left 
+            quickSort(arr, pivotIdx + 1, high) // right
+        }
+        return arr
+    }
+
+    let arr = [2, 5, 1, 7,88,-10,12,45,23, 9, 3, 5, 4]
+    let n = arr.length
+    console.log(quickSort(arr, 0, n - 1))
+
+}
+
+
+/**
+ * function quickSort(arr, left, right) {
 
 
 }
@@ -27,7 +96,7 @@ function partition(arr, left, right) {
     }
     return i //returning left pointer
 }
-console.log(quickSort([8, 2, -3, 4, 2, 7, 1, 5]));
+// console.log(quickSort([8, 2, -3, 4, 2, 7, 1, 5]));
 
 /**
  * let items = [5,3,7,6,2,9]
@@ -141,5 +210,6 @@ function quickSort(items, left, right) {
 let arr = [45,67,8784,342,56,6767]
 
 console.log( quickSort(arr,0,arr.length-1))
+
 
  */
