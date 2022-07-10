@@ -148,45 +148,19 @@ function richest(arr) {
 }
 */
 // function calculatetotalSum(bank){
-    //    let totalAmmount =0
-    //    for(let money of bank ){
-    //     totalAmmount+=money
-    //    }
-    //    return totalAmmount
-    // }
-    // function richestPerson(accounts){
-    //     let maxAmmount= 0
-    //     for(let customes of accounts){
-    //         maxAmmount= Math.max(calculatetotalSum(customes),maxAmmount)
-    //     }
-    //     return maxAmmount
-    // }
-    // console.log(richestPerson([[1,4,2],[2,3,1],[7,1,0]]))
+//    let totalAmmount =0
+//    for(let money of bank ){
+//     totalAmmount+=money
+//    }
+//    return totalAmmount
+// }
+// function richestPerson(accounts){
+//     let maxAmmount= 0
+//     for(let customes of accounts){
+//         maxAmmount= Math.max(calculatetotalSum(customes),maxAmmount)
+//     }
+//     return maxAmmount
+// }
+// console.log(richestPerson([[1,4,2],[2,3,1],[7,1,0]]))
 
 
-    function generateString(num) {
-        let alpha = 'abcdefghijklmnopqrstuvwxyz'
-        let str = ''
-        for (let i = 0; i < num; i++) {
-            str += alpha[i]
-        }
-        return str
-    }
-
-    // function converArr(arr) {
-    //     for (let i = 0; i < arr.length; i++) {
-    //         arr[i] = generateString(arr[i])            
-    //     }
-    //     return arr
-    // }
-    // console.log(converArr([2,1,3,4]))
-
-    function converArr2(arr) {
-        let convertedArr = ['']
-        for (let i = 0; i < arr.length; i++) {
-            convertedArr.push(generateString(i))          
-        }
-        
-        return convertedArr
-    }
-    console.log(converArr2([2,1,5,4]))

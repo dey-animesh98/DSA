@@ -40,5 +40,49 @@
         return merge(left, right)
     };
 
-    console.log(sortArray([5, 1, 3, 6, 1, 8, 2, 4, 3, 45, 0, 18, -6, 1, 3]))
+    // console.log(sortArray([5, 1, 3, 6, 1, 8, 2, 4, 3, 45, 0, 18, -6, 1, 3]))
 }
+
+//--
+
+function conquer(arr, low, mid, high) {
+    let merged = []
+    let index1 = low
+    let index2 = mid + 1
+
+    while ((index1 <= mid && index2 <= high)) {
+        if (arr[index1] <= arr[index2]) {
+            merged.push(arr[index1++])
+        } else {
+            merged.push(arr[index2++])
+        }
+    }
+
+    while (index1 <= mid) {
+        merged.push(arr[index1++])
+    }
+    while (index2 <= high) {
+        merged.push(arr[index2++])
+    }
+
+    for (let i = 0, j = low; i < merged.length; i++, j++) {
+        arr[j] = merged[i]
+    }
+    return merged
+}
+
+function divide(arr, low, high) {
+    if (low >= high) {
+        return
+    }
+
+    let mid = parseInt(low + (high - low) / 2)
+    divide(arr, low, mid)
+    divide(arr, mid + 1, high)
+    conquer(arr, low, mid, high)
+    return arr
+}
+
+let arr = [5, 2, 9, 1, 3, 8, -1, 0, 7, 12, -122, 255, 130, 5, 7, 9, 11, 13, 15, 14, 12, 10, 8, 6, 2]
+let n = arr.length
+console.log(divide(arr, 0, n - 1))
