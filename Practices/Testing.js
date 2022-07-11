@@ -164,3 +164,23 @@ function richest(arr) {
 // console.log(richestPerson([[1,4,2],[2,3,1],[7,1,0]]))
 
 
+{
+    var rotate = function (nums, k) {
+        if (nums.length < k) {
+            k = k % nums.length
+        }
+        let start = nums.length - k, end = nums.length - 1
+        while (start < end) {
+            let temp = nums[start]
+            nums[start] = nums[end]
+            nums[end] = temp
+            start++
+            end--
+        }
+        let kth = nums.splice(-k)
+        
+        return [...kth,...nums]
+
+    }
+console.log(rotate([1,2,3,4,5,6,7], 7))
+}

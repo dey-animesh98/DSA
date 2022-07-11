@@ -6,25 +6,25 @@
 
 //Best for large input
 {
-    const merge = function (arr1, arr2) {
+    const merge = function (left, right) {
         let result = []
         let i = 0
         let j = 0
-        while (i < arr1.length && j < arr2.length) {
-            if (arr1[i] <= arr2[j]) {
-                result.push(arr1[i])
+        while (i < left.length && j < right.length) {
+            if (left[i] <= right[j]) {
+                result.push(left[i])
                 i++
             } else {
-                result.push(arr2[j])
+                result.push(right[j])
                 j++
             }
         }
-        while (i < arr1.length) {
-            result.push(arr1[i])
+        while (i < left.length) {
+            result.push(left[i])
             i++
         }
-        while (j < arr2.length) {
-            result.push(arr2[j])
+        while (j < right.length) {
+            result.push(right[j])
             j++
         }
         return result

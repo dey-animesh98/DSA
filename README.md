@@ -11,6 +11,9 @@ https://docs.google.com/document/d/1UH_0AxVxG2QB7XZnNLrDo0UKFYgTeDqVOAdhvNf4Hqw/
  Easyweb>>> https://www.youtube.com/channel/UCOBA70hHDse0omGfUp2aj0w
 ```
 
+Bug Bounty
+- https://www.youtube.com/watch?v=ig5DuM6M2CQ
+
 * https://www.geeksforgeeks.org/must-do-coding-questions-for-product-based-companies/
 * https://www.geeksforgeeks.org/recently-asked-interview-questions-in-product-based-companies/
 * https://www.codingninjas.com/blog/2021/05/29/must-do-coding-interview-questions-for-product-based-companies/
