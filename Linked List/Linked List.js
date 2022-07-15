@@ -120,6 +120,50 @@
             }
         }
 
+        // reverseList() {
+        //     let curr = this.head
+        //     let prev = null
+        //     while (curr !== null) {
+        //         let temp = curr.next
+        //         curr.next = prev
+        //         prev = curr
+        //         curr = temp
+        //     }
+        // this.head = prev
+        // return prev
+
+        // }
+
+
+        reverseList() {
+            let curr = this.head
+            this.tail = this.head
+            let second = this.head
+
+            while (second) {
+                let temp = second.next
+                second.next = curr
+                curr = second
+                second = temp
+            }
+
+            this.head.next = null
+            this.head = curr
+        }
+
+
+        reverseRecursion(head) {
+            if (head === null || head === null) {
+                return head
+            }
+
+            let newHead = this.reverseRecursion(head.next)
+            let headNext = head.next
+            headNext.next = head
+            head.next = null
+            return newHead
+        }
+
         // Print Data
         printList() {
             let curr = this.head
@@ -128,18 +172,25 @@
                 curr = curr.next
             }
         }
+
     }
 
     const list = new LinkedList()
     list.insertFirst(10)
     list.insertFirst(11)
     list.insertFirst(12)
-    list.insertLast(9)
-    list.insertLast(8)
-    list.insertLast(7)
+    list.insertFirst(13)
+    list.insertFirst(14)
+    // list.insertLast(9)
+    // list.insertLast(8)
+    // list.insertLast(7)
     list.printList()
 
     console.log(">>>>>>")
+    // list.reverseList()
+
+    list.head = list.reverseRecursion()
+    list.printList()
 
     // list.deleteFront()
     // list.deleteLast()

@@ -1,3 +1,16 @@
+//T.C
+// Insert Front O(1)
+// Insert End O(1)
+// Insert middle O(1)  & for Searching O(n) => O(n)
+// If target is known then we can insert at middle in O(1) => Because Serching time will be eliminate
+
+
+// Delete Front O(1)
+// Delete End O(1)
+// Delete middle O(1) & for searching O(n) => O(n)
+// If target is known then we can delete at middle in O(1) => Because Serching time will be eliminate
+
+
 //Doubly Linked list
 class DNode {
     constructor(data, prev = null, next = null) {
@@ -73,13 +86,7 @@ class DoublyLinkedList {
         }
     }
 
-    printList() {
-        let curr = this.head
-        while (curr) {
-            console.log(curr.data)
-            curr = curr.next
-        }
-    }
+
 
 
     deleteFront() {
@@ -158,15 +165,23 @@ class DoublyLinkedList {
 
     }
 
+    printList() {
+        let curr = this.head
+        while (curr) {
+            console.log(curr)
+            curr = curr.next
+        }
+    }
+
 }
 
 
 const dList = new DoublyLinkedList()
 dList.insertFront(5)
 dList.insertFront(4)
-// dList.insertFront(3)
+dList.insertFront(3)
 
-// dList.insertEnd(10)
+dList.insertEnd(10)
 // dList.insertEnd(11)
 // dList.insertEnd(12)
 
@@ -184,20 +199,8 @@ console.log(">>>>>>")
 
 // console.log(">>>>>>")
 
-dList.deleteMiddle(2)
-dList.printList()
+// dList.deleteMiddle(2)
+// dList.printList()
 
-
-//T.C
-// Insert Front O(1)
-// Insert End O(1)
-// Insert middle O(1)  & for Searching O(n) => O(n)
-// If target is known then we can insert at middle in O(1) => Because Serching time will be eliminate
-
-
-// Delete Front O(1)
-// Delete End O(1)
-// Delete middle O(1) & for searching O(n) => O(n)
-// If target is known then we can delete at middle in O(1) => Because Serching time will be eliminate
 
  

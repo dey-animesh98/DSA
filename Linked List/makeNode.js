@@ -123,25 +123,142 @@ class LinkedList {
         }
     }
 
+    removedAt(k) {
+        let curr = this.head
+        let prev
+        let it = 0
+        if (k === 1) {
+            this.head = curr.next
+            curr.next = null
+        } else {
+            while (it < k) {
+                it++
+                prev = curr
+                curr = curr.next
+            }
+            prev.next = curr.next
+            curr.next = null
+
+        }
+        this.size--
+
+    }
+
+    reverseList() {
+        let curr = this.head
+        let prev = null
+
+        while (curr) {
+            let temp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = temp
+        }
+        this.head = prev
+        return prev
+    }
+
+    reverseRecursion(head) {
+        if (head === null || head === null) {
+            return head
+        }
+
+        let newHead = this.reverseRecursion(head.next)
+        head.next.next = head
+        head.next = null
+        return newHead
+    }
+
+    reverseK(head, k) {
+        if (head == null) {
+            return null
+        }
+
+        let curr = head
+        let temp = null
+        let prev = null
+        let count = 0
+
+        while (count < k && curr != null) {
+            temp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = temp
+            count++
+        }
+
+        if (temp != null) {
+            head.next = reverseK(temp, k)
+        }
+        return prev
+    }
+
+
+    //Reverse Alternative K{
+
+    // }
+
+
+    detectLoopH(head) {
+        let set = new Set()
+        while (head !== null) {
+            if (s.has(head)) {
+                return true
+            }
+            set.add(head)
+            head = head.next
+        }
+        return false
+    }
+
+    detectLoopPointer(head) {
+        let slow = head
+        let fast = head
+        while (fast & fast.next) {
+            slow = slow.next
+            fast = fast.next.next
+            if (slow === fast) return true
+        }
+        return false
+    }
+
 }
 
 
 var l1 = new LinkedList();
 
 l1.addEle(10)
-
 l1.addEle(20)
-
 l1.addEle(30)
+l1.addEle(40)
 
 l1.printList()
 
-l1.size_of_list()
+console.log(">>>");
 
-console.log(l1.isEmpty())
+l1.head = l1.reverseRecursion(l1.head)
 
-l1.removeElement(20)
-
+// l1.reverseList()
 l1.printList()
 
-l1.size_of_list()
+// console.log(">>>");
+
+// l1.reverseRecursion()
+// l1.printList()
+
+
+// l1.size_of_list()
+
+// console.log(l1.isEmpty())
+
+// l1.removeElement(20)
+
+// l1.printList()
+
+// l1.size_of_list()
+
+//Revserse a linked in  given
+
+//with out reverse print the reversed linkedlist
+
+//
