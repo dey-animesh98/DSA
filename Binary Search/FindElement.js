@@ -77,5 +77,5 @@
         }
         return start
     }
-    console.log(findPosition([2, 4, 6, 8, 9, 11, 15], 17))
+    console.log(findPosition([2, 4, 6, 8, 9, 11, 15], 5))
 }

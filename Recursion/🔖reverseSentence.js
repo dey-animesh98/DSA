@@ -29,5 +29,35 @@
         }
         return senArr.join(' ')
     }
-    console.log(revSent('mera nam joker'))
+    // console.log(revSent('mera nam joker'))
+}
+
+
+{
+    function revw(word) {
+        let str = ''
+        for (let i = word.length - 1; i >= 0; i--) {
+            str += word[i]
+        }
+        return str
+    }
+
+    function revs(sen) {
+        sen = sen.split(' ')
+        for(let i = 0; i< sen.length; i++){
+            sen[i] = revw(sen[i])
+        }
+        return sen.join(' ')
+    }
+
+    console.log(revs('hello my name is none'))
+}
+
+{
+    function revwc(word) {
+        if(word.length === 0) return ''
+        return revwc(word.slice(1)) + word[0]
+    }
+
+    console.log(revwc('abcdeg'))
 }

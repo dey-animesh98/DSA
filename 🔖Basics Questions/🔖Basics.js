@@ -175,4 +175,22 @@ function isPrime(num) {
   // console.log(solution1(4,[7,4,5,3]))
 }
 
-console.log(15 - 7 * (5))
+// console.log(15 - 7 * (5))
+
+
+//Return the data that how many times each animal repeated
+
+function animalFreqCount(animals) {
+  let animalFre = {}
+
+  for (let animal of animals) {
+      if (animalFre[animal]) {
+          animalFre[animal] += 1
+      } else {
+          animalFre[animal] = 1
+      }
+  }
+  return animalFre
+}
+
+// console.log(animalFreqCount(["dog", "pussy", "cook", "dog", "lion", "pussy", "cat"]))

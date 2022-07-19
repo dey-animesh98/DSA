@@ -32,7 +32,7 @@ function balance(str) {
     for (let i = 0; i < str.length; i++) {
         if (str[i] === '{') {
             open++
-        } else {
+        } else if (str[i] === '}'){
             if (open === 0) {
                 close++
             } else {
@@ -45,10 +45,10 @@ function balance(str) {
 }
 
 
-console.log(balance('}}}}}}}}}}'))
+console.log(balance('{{{}{{'))
 
 {
-    function bal(str) {
+    function bal2(str) {
         if (str.length % 2 !== 0) return -1
 
         let stack = []
@@ -66,5 +66,27 @@ console.log(balance('}}}}}}}}}}'))
         } 
         return stack.length / 2
     }
-    console.log(bal('}}}}}}}}}}'))
+    console.log(bal2('{{{}{{'))
+}
+
+
+{
+    var minAddToMakeValid = function (s) {
+        let stack = []
+
+        for (let ele of s) {
+            if (ele === '{') {
+                stack.push(ele)
+            }
+
+            if (ele === '}' && stack[stack.length - 1] === '{') {
+                stack.pop()
+            } else {
+                if (ele === '}') stack.push(ele)
+            }
+        }
+        return stack.length/2
+
+    };
+    console.log(minAddToMakeValid('{{{}{{'))
 }

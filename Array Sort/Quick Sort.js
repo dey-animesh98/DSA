@@ -27,7 +27,7 @@
 {
     function partition(arr, low, high) {
         //last index is pivot
-        let pivot = arr[high]  
+        let pivot = arr[high]
         // i is a place maker for smaller element than pivot . here we assuming there
         // are no smaller element than pivot so take low -1 i.e = -1
         let i = low - 1
@@ -61,7 +61,7 @@
         return arr
     }
 
-    let arr = [2, 5, 1, 7,88,-10,12,45,23, 9, 3, 5, 4]
+    let arr = [2, 5, 1, 7, 88, -10, 12, 45, 23, 9, 3, 5, 4]
     let n = arr.length
     console.log(quickSort(arr, 0, n - 1))
 

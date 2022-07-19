@@ -33,7 +33,7 @@
         return ("Index:" + (start - 1) + " Ele:" + array[start - 1])
     }
     // console.log(findCeilling(["b", "d", "e","g", "i", "l"],"k"))
-    // console.log(findCeilling([10, 8, 6, 5, 2, 0, -1, -3], -7))
+    console.log(findCeilling([10, 8, 6, 5, 2, 0, -1, -3], 9))
 }
 
 // //Find Smallest Number Greater Than Target (Celling but not find the equal number only greater number)
@@ -70,7 +70,7 @@
         }
         return ("Index:" + start + " Ele:" + array[start - 1])
     }
-    console.log(findCeillingGreater([2, 4, 8, 9, 11, 15], 4))
+    // console.log(findCeillingGreater([2, 4, 8, 9, 11, 15], 4))
 
 }
 

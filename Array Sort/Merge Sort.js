@@ -6,7 +6,7 @@
 
 //Best for large input
 {
-    const merge = function (left, right) {
+     function merge (left, right) {
         let result = []
         let i = 0
         let j = 0
@@ -30,7 +30,7 @@
         return result
     }
 
-    const sortArray = function (nums) {
+     function sortArray(nums) {
         if (nums.length === 1) return nums
         let mid = Math.floor(nums.length / 2)
 
@@ -40,7 +40,7 @@
         return merge(left, right)
     };
 
-    // console.log(sortArray([5, 1, 3, 6, 1, 8, 2, 4, 3, 45, 0, 18, -6, 1, 3]))
+    console.log(sortArray([5, 1, 3, 6, 1, 8, 2, 4, 3, 45, 0, 18, -6, 1, 3]))
 }
 
 //--
@@ -85,4 +85,4 @@ function divide(arr, low, high) {
 
 let arr = [5, 2, 9, 1, 3, 8, -1, 0, 7, 12, -122, 255, 130, 5, 7, 9, 11, 13, 15, 14, 12, 10, 8, 6, 2]
 let n = arr.length
-console.log(divide(arr, 0, n - 1))
+// console.log(divide(arr, 0, n - 1))

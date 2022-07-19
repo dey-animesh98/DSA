@@ -14,6 +14,9 @@
         return arr
     }
     function rotateArr(arr, k) {
+        if (k === arr.length) {
+            return arr
+        }
         if (k > arr.length) {
             k = k % arr.length
         }

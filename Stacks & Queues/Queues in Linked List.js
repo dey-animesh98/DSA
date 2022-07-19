@@ -74,16 +74,11 @@ class Queue {
 // console.log(que.isEmpty())
 // console.log(que.frontEle())
 
-// // while (!que.isEmpty()) {
-// //     console.log(que.getSize(),">",que.deQueue())
+// while (!que.isEmpty()) {
+//     console.log(que.getSize(),">",que.deQueue())
     
-// // }
+// }
 
 // console.log(que.getSize())
 
 
-class StackinQueue{
-    constructor(){
-        this.list = new Queue()
-    }
-}
