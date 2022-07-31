@@ -236,7 +236,7 @@ l1.printList()
 
 console.log(">>>");
 
-l1.head = l1.reverseRecursion(l1.head)
+// l1.head = l1.reverseRecursion(l1.head)
 
 // l1.reverseList()
 l1.printList()

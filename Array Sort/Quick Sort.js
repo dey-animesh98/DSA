@@ -53,7 +53,6 @@
         if (low < high) {
             // will i means the correct index of pivot ele
             let pivotIdx = partition(arr, low, high)
-
             //Re partitioning for sort both sides pivot elements
             quickSort(arr, low, pivotIdx - 1) // left 
             quickSort(arr, pivotIdx + 1, high) // right

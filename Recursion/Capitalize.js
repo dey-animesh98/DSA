@@ -6,7 +6,7 @@
         str = str[0].toUpperCase() + str.slice(1)
         return [str].concat(capitalizeR(arr.slice(1)))
     }
-    console.log(capitalizeR(['holal', 'mola', 'chola', 'gola']))
+    // console.log(capitalizeR(['holal', 'mola', 'chola', 'gola']))
 }
 
 {//With recursion
@@ -15,17 +15,17 @@
         arr[0] = arr[0][0].toUpperCase() + arr[0].slice(1)
         return [arr[0]].concat(capitalize3(arr.slice(1)))
     }
-    console.log(capitalize3(['hola', 'mola', 'cholai;', 'gola']))
+    // console.log(capitalize3(['hola', 'mola', 'chola', 'gola']))
 }
 {//With recursion
     function capitalize4(arr) {
         let temp = []
         if (arr.length < 1) return []
-        let s = arr[0][0].toUpperCase() + arr[0].slice(1)
-        temp.push(s)
+        temp.push(arr[0][0].toUpperCase() + arr[0].slice(1))
+        // temp.push(s)
         return temp.concat(capitalize4(arr.slice(1)))
     }
-    // console.log(capitalize4(['hola', 'mola', 'cholai', 'gola']))
+    console.log(capitalize4(['hola', 'mola', 'cholai', 'loka']))
 }
 
 //-

@@ -11,7 +11,7 @@
             return fibo(n - 1) + fibo(n - 2)
         }
     }
-    //  console.log(fibo(100)) 
+     console.log(fibo(2)) 
 
 }
 
