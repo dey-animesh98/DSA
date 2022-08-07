@@ -13,6 +13,11 @@
 
 // info `${country}${cap}`
 
-let ar = {h:'m',h:'n'}
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console.log(ar)
+// const forEachValue = array.forEach((item) => console.log(item));
+const mapValue = array.map((item) => console.log(item));
+
+// console.log("Array => ", forEachValue);
+// console.log("Array => ", mapValue);
+

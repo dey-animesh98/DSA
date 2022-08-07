@@ -22,7 +22,7 @@ Bug Bounty
 1. https://visualgo.net/en
 2. https://www.toptal.com/developers/sorting-algorithms
 
-ANAJANA VAKILA website-https://slidr.io/vakila/learning-functional-programming-with-javascript#30
+* ANJANA VAKILA website-https://slidr.io/vakila/learning-functional-programming-with-javascript#30
 * JS CONFERENCE- https://www.youtube.com/watch?v=NMMOv_md-14
 
 ### DSA Articles 
@@ -90,3 +90,17 @@ https://ankitsaxena21.github.io/Food-Ordering-App/
 ```
 
 AWS-> 'https://drive.google.com/drive/u/0/folders/1xu0wB2f7Xc6d1NuQ6yP9vxBFVXo1WoIj'
+
+Notes From Master class => 
+-> https://docs.google.com/document/d/1_2ksFrLP3oNdsS_tdp6okjyF-R7tD9RS7YYoFUoPccg/edit
+-> https://docs.google.com/document/d/12_SlCzG57iAcDENXEMU5xC5ZHTyrSzxRaV4p3I4XLw4/edit
+
+Backend Roadmap-> https://www.commclassroom.org/backend-roadmap
+
+=>https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/
+
+
+Linked to the Universe of Javascript Questions with answers => 
+https://github.com/sudheerj/javascript-interview-questions
+https://www.thatjsdude.com/interview/js1.html
+https://dev.to/javinpaul/50-data-structure-and-algorithms-problems-from-coding-interviews-4lh2  

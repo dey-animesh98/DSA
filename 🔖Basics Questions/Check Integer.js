@@ -29,7 +29,7 @@
         }
         return true
     }
-    // console.log(checkInt2(124))
+    console.log(checkInt2(-45))
 }
 
 
@@ -42,7 +42,16 @@
         let res = intReg.test(input)
         return res
     }
-    //  console.log(checkInt3(23))
+     console.log(checkInt3(-23))
 
 
 }
+
+
+function isInt(num) {
+    return num % 1 === 0;
+  }
+  
+  console.log(isInt(-584)); // true
+//   console.log(isInt(12.2)); // false
+  console.log(isInt(0.3));

@@ -86,3 +86,23 @@ function divide(arr, low, high) {
 let arr = [5, 2, 9, 1, 3, 8, -1, 0, 7, 12, -122, 255, 130, 5, 7, 9, 11, 13, 15, 14, 12, 10, 8, 6, 2]
 let n = arr.length
 // console.log(divide(arr, 0, n - 1))
+
+/*
+function compare(a, b) {
+    if (a is less than b by some ordering criterion) {
+  //if you want to put smaller number at the end of the array, to get an array with descending order return a negative number
+      return -1;
+    }
+    if (a is greater than b by the ordering criterion) {
+  //if you want to put smaller number at the begining of the array, , to get an array with descending order return a postive number
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+  }
+
+  1 means a is bigger than b so a swap is needed
+-1 means a is smaller than b so they are already in the right order.
+0 means they are the same
+
+  */
