@@ -30,7 +30,7 @@
         let pivot = arr[high]
         // i is a place maker for smaller element than pivot . here we assuming there
         // are no smaller element than pivot so take low -1 i.e = -1
-        let i = low - 1
+        let i = low - 1 // i is place maker for those element those are less than pivot
 
         //traversing tbe array and comparing the elements with pivot
         for (let j = low; j < high; j++) {

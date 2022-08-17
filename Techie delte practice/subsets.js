@@ -15,7 +15,7 @@ function subSeq(p, up) {
     subSeq(p, up.slice(1))
     return res
 }
-// console.log(subSeq('', 'abc'))
+console.log(subSeq('', 'abc'))
 
 
 {//Tc -O(n * 2^n) Sc- O(2^n * n)

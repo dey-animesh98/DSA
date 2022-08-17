@@ -15,6 +15,7 @@ var lengthOfLongestSubstring = function (s) {
     let [n, left, right, cur] = [s.length, 0, 0, ''];
     let seen = {};
     let longest = 0;
+    
     while (right < n) {
         cur = s[right];
         if (seen[cur] !== undefined && seen[cur] >= left) {
@@ -26,3 +27,18 @@ var lengthOfLongestSubstring = function (s) {
     }
     return longest;
 };
+
+// b=""    
+// for (let i of str)
+//     b += i
+//     f(b)
+
+// for i in range(1,len(a)+1):
+// b = ''.join([a[j] for j in range(0,i)])
+// f(b)
+
+
+//   }
+//  console.log( all_possible_substring( "abcdef" , 0, 2))
+
+

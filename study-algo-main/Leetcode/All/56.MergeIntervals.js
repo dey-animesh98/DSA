@@ -8,7 +8,6 @@
 // Cases: [[1,4],[2,3]]
 // [[1,3],[2,6],[8,10],[15,18]]
 // [[1,4],[4,5]]
-
 var merge = function (intervals) {
     if (intervals.length < 2) return intervals;
     intervals = intervals.sort((a, b) => a[0] - b[0]);

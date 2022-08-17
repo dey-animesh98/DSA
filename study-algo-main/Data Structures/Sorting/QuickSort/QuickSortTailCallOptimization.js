@@ -21,4 +21,8 @@ function quickSort(arr, low, high) {
             high = pi - 1;
         }
     }
+    return arr
 }
+
+
+console.log(quickSort([2,78,3,1,8,7,12,45,7,863,-21,-45,0,1,78]))

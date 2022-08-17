@@ -45,3 +45,33 @@ function uniqueMinWin(str) {
 }
 
 console.log(uniqueMinWin("abcc"))
+
+
+{
+    var lengthOfLongestSubstring = function (s) {
+  
+        let start = 0, end = 0, maxWin = 0
+        let map = new Map()
+
+        while (end < s.length) {
+          
+            if (!map.has(s[end])) {
+                map.set(s[end], 1)
+                end++
+              
+                if (maxWin < end - start) {
+                    maxWin = end - start
+                }
+              
+            } else {
+              
+                map.delete(s[start])
+                start++
+            }
+
+        }
+  
+        return maxWin
+}
+console.log(lengthOfLongestSubstring('abccdea'))
+}

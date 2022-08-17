@@ -10,8 +10,8 @@
 
 let twoSum = (numArr, target) => {
     // create a map 
-    let numMap = newMap();
-    let complement=0;
+    let numMap = new Map();
+    let complement = 0;
     // loop on the array
     for (let i = 0; i < numArr.length; i++) {
         complement = target - numArr[i];
@@ -22,4 +22,5 @@ let twoSum = (numArr, target) => {
     }
 
 }
+console.log(twoSum([2, 3, 4, 5, 6, 7], 9))
 

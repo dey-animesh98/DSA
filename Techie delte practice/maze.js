@@ -9,7 +9,7 @@ function mazePath(r, c) {
     return left + right
 }
 
-// console.log(mazePath(4, 4))
+console.log(mazePath(51, 9))
 
 
 //printing the path
@@ -82,5 +82,5 @@ let maze = [
     [true, false, true]
 ]
 
-mazeRestrictions('', maze, 0, 0)
+// mazeRestrictions('', maze, 0, 0)
 

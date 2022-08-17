@@ -41,14 +41,14 @@
                 } else if (target < array[mid]) {
                     end = mid - 1
                 }
-                
+
             } else {
                 if (target < array[mid]) {
                     start = mid + 1
                 } else if (target > array[mid]) {
                     end = mid - 1
                 }
-               
+
             }
         }
         return -1
@@ -63,19 +63,58 @@
         let start = 0
         let end = array.length - 1
         while (start <= end) {
-            let mid = Math.floor(start + (end - start) / 2)  
-            
+            let mid = Math.floor(start + (end - start) / 2)
+
             if (target < array[mid]) {
                 end = mid - 1
-                
+
             } else if (target > array[mid]) {
                 start = mid + 1
-             
+
             } else {
                 return mid
             }
         }
         return start
     }
-    console.log(findPosition([2, 4, 6, 8, 9, 11, 15], 5))
+    // console.log(findPosition([2, 4, 6, 8, 9, 11, 15], 5))
+}
+
+{
+    function findElement(array, target) {
+        let start = 0
+        let end = array.length - 1
+        // console.log("length of arr: ", array.length)
+        while (start <= end) {
+            let mid = Math.floor(start + (end - start) / 2)   //We are this for handle integer range this is same as [start+end/2]
+            // console.log("mid: ", mid, array[mid])
+            if (target < array[mid]) {
+                end = mid - 1
+                // console.log("end: ", end)
+            } else if (target > array[mid]) {
+                start = mid + 1
+                // console.log("start: ", start)
+            } else {
+                return mid
+            }
+        }
+        return -1
+    }
+    // console.log(findElement([2, 3, 4, 8, 9, 9, 11], 9))
+}
+
+{
+    function first(arr, low, high, tar, n) {
+        if (high >= low) {
+            let mid = low + Math.floor((high - low) / 2);
+            if ((mid == 0 || tar > arr[mid - 1]) && arr[mid] == tar)
+                return mid;
+            else if (tar > arr[mid])
+                return first(arr, (mid + 1), high, tar, n);
+            else
+                return first(arr, low, (mid - 1), tar, n);
+        }
+        return -1;
+    }
+    console.log(first([2, 3, 4, 8, 9, 9, 11], 0, 6, 9, 7))
 }

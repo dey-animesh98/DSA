@@ -85,7 +85,7 @@ function findKthlargestSubString(str, k) {
         }
         return [strStart, strEnd, subStr]
     }
-    console.log(findLongestSubStr('hellothere'))
+    // console.log(findLongestSubStr('hellothere'))
 }
 /**
  * Find the largest substring with distinct characters. 
@@ -122,4 +122,5 @@ function findKthlargestSubString(str, k) {
         return [maxWindow, subWinStart, subWinEnd]
     }
     console.log(findLargest('hellothere'))
+    console.log(findLargest('eceba'))
 }

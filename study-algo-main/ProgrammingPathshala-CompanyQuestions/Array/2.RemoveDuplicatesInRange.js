@@ -20,3 +20,5 @@ let returnDuplicatesSpaceEfficient = (a) => {
     }
     return duplicates;
 }
+
+console.log(returnDuplicatesSpaceEfficient([4, 2, 6, 5, 2, 4, 1, 3, 1]))

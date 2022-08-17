@@ -10,30 +10,30 @@
 
 // Input: s = "IV"
 // Output: 4
-let romanToInteger = (str)=>{
+let romanToInteger = (str) => {
     let num = 0;
-    let romanMap={
-        I:1,
-        V:5,
-        X:10,
-        L:50,
-        C:100,
-        D:500,
-        M:1000
-    };  
-    for(let i =0; i< str.length ; i++){
+    let romanMap = {
+        I: 1,
+        V: 5,
+        X: 10,
+        L: 50,
+        C: 100,
+        D: 500,
+        M: 1000
+    };
+    for (let i = 0; i < str.length; i++) {
         let current = romanMap[str[i]];
-        let next = romanMap[str[i+1]];
-        if(next){
-            if(current < next ){
-                num += (next - current );
-                i++;
+        let next = romanMap[str[i + 1]];
+        if (next) {
+            if (current < next) {
+                num += (next - current);
+                i++;    
             }
             else {
                 num += current;
             }
         }
-        else{
+        else {
             num += current;
         }
 

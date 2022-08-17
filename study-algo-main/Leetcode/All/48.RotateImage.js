@@ -30,7 +30,7 @@ let rotate = matrix => {
 }
 
 // Method 2
-let rotate = (arr) => {
+let rotate2 = (arr) => {
     let [l, r] = [0, arr.length - 1];   // number of rows = number of columns = arr.length(square matrix)
     while (l < r) {
         for (let i = 0; i < r - l; i++) {

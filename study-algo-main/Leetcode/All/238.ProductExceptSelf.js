@@ -34,13 +34,11 @@ var productExceptSelf = function (nums) {
     if (nums.length <= 1) return nums;
     let p = 1;
     let output = [];
-    // left traversal and find the product of the left side of the element [1,2,3,4] => output => [1,2,6,24]
     for (let i = 0; i < nums.length; i++) {
         p = p * nums[i];
         output.push(p);
     }
     p = 1;
-    // p stores the product of the right side elements 
     for (let i = nums.length - 1; i > 0; i--) {
         output[i] = output[i - 1] * p;
         p *= nums[i];
